@@ -78,6 +78,5 @@ namespace APIClientes.Services
 
             return ClienteParser.ToClienteDTO(cliente);
         }
-
     }
 }

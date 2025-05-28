@@ -14,8 +14,6 @@ namespace APIClientes
         {
             var builder = WebApplication.CreateBuilder(args);
 
-
-
             // Add services to the container.
 
             builder.Services.AddControllers()
@@ -30,6 +28,7 @@ namespace APIClientes
             builder.Services.AddSwaggerGen();
             builder.Services.AddSingleton<ClientesContext>();
             builder.Services.AddScoped<ClientesService>();
+            builder.Services.AddScoped<EnderecosService>();
 
             var app = builder.Build();
 
